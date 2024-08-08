@@ -3,80 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Simple Navigation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
         nav {
-            background-color: #333;
-            overflow: hidden;
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
+            color: #fff;
             text-decoration: none;
+            padding: 10px;
+            display: inline-block;
         }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
+        section {
+            padding: 60px 20px;
+            margin-top: 50px;
         }
-        main {
-            padding: 20px;
+        #home {
+            background: #f4f4f4;
         }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        #contact {
+            background: #e2e2e2;
+        }
+        #article {
+            background: #ccc;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to Chaitra's Website</h1>
-    </header>
-
     <nav>
         <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="https://chaitcscf.co.uk/#about">Article</a>
         <a href="#contact">Contact</a>
+        <a href="#article">Article</a>
     </nav>
 
-    <main>
-        <h2>Home</h2>
-        <p> Recording my experience using Cloudflare here : </p>
-        <p> This website was hosted using Cloudflare Pages </p>
-        <p> Cloudflare Pages + Git = this website :) </p>
-    </main>
-    
-     <main>
-        <h2>Article</h2>
-        <p> Using Cloudflare significantly enhanced my website’s speed, performance, and security, demonstrating the effectiveness of Cloudflare’s free features and easy-to-use platform. </p>
-        <p> This experience highlighted Cloudflare’s potential as a robust solution for website optimization and protection.</p>
-        <p> Cloudflare’s UI was easy to navigate, and the free plan covered all the essential functions needed for my project. </p>
-        <p> The free plan covers essential functions, making it accessible for initial projects and small websites. </p>
-    </main>
+    <section id="home">
+        <h1>Home</h1>
+        <p>Recording my experience using Cloudflare here :</p>
+        <p>This website was hosted using Cloudflare Pages.</p>
+        <p>Cloudflare Pages + Git = this website :)</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 My Simple Website</p>
-    </footer>
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Email: <a href="mailto:chait1792@gmail.com">chait1792@gmail.com</a></p>
+        <p>Phone: 07377924540</p>
+    </section>
+
+    <section id="article">
+        <h1>Article</h1>
+        <p>Using Cloudflare significantly enhanced my website’s speed, performance, and security, demonstrating the effectiveness of Cloudflare’s free features and easy-to-use platform. This experience highlighted Cloudflare’s potential as a robust solution for website optimization and protection.</p>
+        <p>Cloudflare’s UI was easy to navigate, and the free plan covered all the essential functions needed for my project. The free plan covers essential functions, making it accessible for initial projects and small websites.</p>
+        <p>The Cloudflare carbon savings feature was a cherry on the top. Cloudflare's user-friendly dashboard provides easy access to tools for traffic analytics, threat monitoring, and domain management.</p>
+    </section>
 
 </body>
 </html>
