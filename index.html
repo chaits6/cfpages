@@ -3,62 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CS Website fun </title>
+    <title>CS Website Fun</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f0f0f0;
+            background: linear-gradient(to right, #f5a623, #f06d06);
             color: #333;
         }
         header {
-            background: #3498db;
+            background: linear-gradient(to right, #f06d06, #f5a623);
             color: #fff;
             padding: 20px 0;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         nav {
-            background: #2980b9;
+            background: #f5a623;
             color: #fff;
             padding: 10px 0;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            padding: 10px 15px;
+            padding: 10px 20px;
             display: inline-block;
+            transition: background 0.3s;
         }
         nav a:hover {
-            background: #1abc9c;
+            background: #f06d06;
         }
         .container {
             max-width: 900px;
             margin: 20px auto;
             padding: 20px;
             background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         section {
             margin-bottom: 20px;
         }
         footer {
-            background: #3498db;
+            background: #f5a623;
             color: #fff;
             text-align: center;
             padding: 10px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #f06d06;
+        }
+        p a {
+            color: #f06d06;
+            text-decoration: none;
+        }
+        p a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>My Stylish Page</h1>
+        <h1>CS Website Fun</h1>
     </header>
 
     <nav>
@@ -67,25 +81,31 @@
         <a href="#article">Summary</a>
     </nav>
 
-    <section id="home">
-        <h1>Home</h1>
-        <p>Recording my experience using Cloudflare here :</p>
-        <p>This website was hosted using Cloudflare Pages.</p>
-        <p>Cloudflare Pages + Git = this website :)</p>
-    </section>
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <p>Recording my experience using Cloudflare here:</p>
+            <p>This website was hosted using Cloudflare Pages.</p>
+            <p>Cloudflare Pages + Git = this website :)</p>
+        </section>
 
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>Email: <a href="mailto:chait1792@gmail.com">chait1792@gmail.com</a></p>
-        <p>Phone: 07377924540</p>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:chait1792@gmail.com">chait1792@gmail.com</a></p>
+            <p>Phone: 07377924540</p>
+        </section>
 
-    <section id="article">
-        <h1>Experience with Cloudflare </h1>
-        <p>Using Cloudflare significantly enhanced my website’s speed, performance, and security, demonstrating the effectiveness of Cloudflare’s free features and easy-to-use platform. This experience highlighted Cloudflare’s potential as a robust solution for website optimization and protection.</p>
-        <p>Cloudflare’s UI was easy to navigate, and the free plan covered all the essential functions needed for my project. The free plan covers essential functions, making it accessible for initial projects and small websites.</p>
-        <p>The Cloudflare carbon savings feature was a cherry on the top. Cloudflare's user-friendly dashboard provides easy access to tools for traffic analytics, threat monitoring, and domain management.</p>
-    </section>
+        <section id="article">
+            <h2>Experience with Cloudflare</h2>
+            <p>Using Cloudflare significantly enhanced my website’s speed, performance, and security, demonstrating the effectiveness of Cloudflare’s free features and easy-to-use platform. This experience highlighted Cloudflare’s potential as a robust solution for website optimization and protection.</p>
+            <p>Cloudflare’s UI was easy to navigate, and the free plan covered all the essential functions needed for my project. The free plan covers essential functions, making it accessible for initial projects and small websites.</p>
+            <p>The Cloudflare carbon savings feature was a cherry on the top. Cloudflare's user-friendly dashboard provides easy access to tools for traffic analytics, threat monitoring, and domain management.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CS Website Fun. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
